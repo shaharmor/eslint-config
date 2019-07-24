@@ -1,0 +1,39 @@
+{
+  "name": "@shaharmor/eslint-config",
+  "version": "0.0.0",
+  "main": ".eslintrc.json",
+  "files": [
+    ".eslintrc.json",
+    "prettier.js"
+  ],
+  "author": "Shahar Mor",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shaharmor/eslint-config.git"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "1.13.0",
+    "eslint-config-airbnb-base": "13.2.0",
+    "eslint-config-prettier": "6.0.0",
+    "typescript": "3.5.3"
+  },
+  "devDependencies": {
+    "eslint": "6.1.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "22.13.6",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-import-resolver-typescript": "1.1.1",
+    "@typescript-eslint/eslint-plugin": "1.13.0",
+    "prettier": "1.18.2"
+  },
+  "peerDependencies": {
+    "eslint": "6.1.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "22.13.6",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-import-resolver-typescript": "1.1.1",
+    "@typescript-eslint/eslint-plugin": "1.13.0",
+    "prettier": "1.18.2"
+  }
+}
