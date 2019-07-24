@@ -1,0 +1,1 @@
+# @shaharmor/eslint-config
