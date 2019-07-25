@@ -4,12 +4,12 @@
 
 1. Install eslint & relevant eslint plugins
 ```sh
-npm i eslint eslint-plugin-import eslint-plugin-jest eslint-plugin-prettier eslint-import-resolver-typescript @typescript-eslint/eslint-plugin prettier
+npm i --save-dev eslint eslint-plugin-import eslint-plugin-jest eslint-plugin-prettier eslint-import-resolver-typescript @typescript-eslint/eslint-plugin prettier
 ```
 
 2. Install this eslint config
 ```sh
-npm i @shaharmor/eslint-config
+npm i --save-dev @shaharmor/eslint-config
 ```
 
 ### Configuration
