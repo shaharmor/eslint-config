@@ -3,8 +3,7 @@
   "version": "1.0.1",
   "main": ".eslintrc.json",
   "files": [
-    ".eslintrc.json",
-    "prettier.js"
+    ".eslintrc.json"
   ],
   "author": "Shahar Mor",
   "license": "MIT",

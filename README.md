@@ -1,5 +1,7 @@
 # @shaharmor/eslint-config
 
+My opinionated eslint config
+
 ### Installation
 
 1. Install eslint & relevant eslint plugins
@@ -24,12 +26,5 @@ npm i --save-dev @shaharmor/eslint-config
       ]
     }
     ```
-
-2. Configure prettier to use this module's prettier config:
-
-    Add `.prettierrc` in your project`s root folder with the contents of:
-    ```
-    @shaharmor/eslint-config/prettier
-    ``` 
 
 That's it!
