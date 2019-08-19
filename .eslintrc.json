@@ -54,7 +54,7 @@
       {
         "exceptAfterSingleLine": true
       }
-    ]
-  },
-  "no-restricted-syntax": "off"
+    ],
+    "no-restricted-syntax": "off"
+  }
 }
