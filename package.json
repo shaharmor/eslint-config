@@ -1,6 +1,6 @@
 {
   "name": "@shaharmor/eslint-config",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": ".eslintrc.json",
   "files": [
     ".eslintrc.json"
