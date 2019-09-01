@@ -15,7 +15,7 @@
     "@typescript-eslint/parser": "2.0.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-config-prettier": "6.1.0",
-    "typescript": "3.5.3"
+    "typescript": "3.6.2"
   },
   "devDependencies": {
     "eslint": "6.3.0",
