@@ -12,7 +12,7 @@
     "url": "git://github.com/shaharmor/eslint-config.git"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "2.6.0",
+    "@typescript-eslint/parser": "2.6.1",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-config-prettier": "6.5.0",
     "typescript": "3.6.4"
