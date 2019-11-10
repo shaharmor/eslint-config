@@ -1,5 +1,6 @@
 {
   "name": "@shaharmor/eslint-config",
+  "description": "My opinionated eslint config",
   "version": "1.1.3",
   "main": ".eslintrc.json",
   "files": [
@@ -11,6 +12,10 @@
     "type": "git",
     "url": "git://github.com/shaharmor/eslint-config.git"
   },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
   "dependencies": {
     "@typescript-eslint/parser": "2.6.1",
     "eslint-config-airbnb-base": "14.0.0",
