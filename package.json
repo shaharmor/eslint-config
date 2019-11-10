@@ -26,11 +26,11 @@
     "prettier": "1.19.1"
   },
   "peerDependencies": {
-    "eslint": "^6.1.0",
+    "eslint": "^6.6.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.0",
-    "eslint-import-resolver-typescript": "^1.1.1",
-    "@typescript-eslint/eslint-plugin": "^2.0.0",
-    "prettier": "^1.18.2"
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "prettier": "^1.19.1"
   }
 }
