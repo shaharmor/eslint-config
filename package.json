@@ -1,21 +1,27 @@
 {
   "name": "@shaharmor/eslint-config",
-  "description": "My opinionated eslint config",
   "version": "1.2.0",
-  "main": ".eslintrc.json",
-  "files": [
-    ".eslintrc.json"
-  ],
-  "author": "Shahar Mor",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/shaharmor/eslint-config.git"
-  },
+  "description": "My opinionated eslint config",
   "keywords": [
     "eslint",
     "eslintconfig"
   ],
+  "homepage": "https://github.com/shaharmor/eslint-config",
+  "bugs": {
+    "url": "https://github.com/shaharmor/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaharmor/eslint-config.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Shahar Mor"
+  },
+  "files": [
+    ".eslintrc.json"
+  ],
+  "main": ".eslintrc.json",
   "dependencies": {
     "@typescript-eslint/parser": "2.6.1",
     "eslint-config-airbnb-base": "14.0.0",
@@ -23,19 +29,19 @@
     "typescript": "3.7.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "2.6.1",
     "eslint": "6.6.0",
+    "eslint-import-resolver-typescript": "1.1.1",
     "eslint-plugin-import": "2.18.2",
     "eslint-plugin-prettier": "3.1.1",
-    "eslint-import-resolver-typescript": "1.1.1",
-    "@typescript-eslint/eslint-plugin": "2.6.1",
     "prettier": "1.19.1"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
     "eslint": "^6.6.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
-    "eslint-import-resolver-typescript": "^2.0.0",
-    "@typescript-eslint/eslint-plugin": "^2.6.1",
     "prettier": "^1.19.1"
   }
 }
