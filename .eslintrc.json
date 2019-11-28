@@ -23,6 +23,7 @@
     }
   },
   "rules": {
+    "no-plusplus": "off",
     "@typescript-eslint/indent": [
       "error",
       2
