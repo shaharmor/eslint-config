@@ -23,23 +23,6 @@
     }
   },
   "rules": {
-    "no-plusplus": "off",
-    "@typescript-eslint/indent": [
-      "error",
-      2
-    ],
-    "import/no-default-export": "error",
-    "import/prefer-default-export": "off",
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": [
-          "**/*.test.ts"
-        ]
-      }
-    ],
-    "no-continue": "off",
-    "no-await-in-loop": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-member-accessibility": [
       "error",
@@ -50,13 +33,58 @@
         }
       }
     ],
-    "lines-between-class-members": [
+    "@typescript-eslint/indent": [
       "error",
+      2
+    ],
+    "@typescript-eslint/member-ordering": [
+      "error",
+      {
+        "default": [
+          "private-abstract-field",
+          "private-abstract-method",
+          "private-constructor",
+          "private-instance-field",
+          "private-instance-method",
+          "private-static-field",
+          "private-static-method",
+          "protected-abstract-field",
+          "protected-abstract-method",
+          "protected-constructor",
+          "protected-instance-field",
+          "protected-instance-method",
+          "protected-static-field",
+          "protected-static-method",
+          "public-abstract-field",
+          "public-abstract-method",
+          "public-constructor",
+          "public-instance-field",
+          "public-instance-method",
+          "public-static-field",
+          "public-static-method"
+        ]
+      }
+    ],
+    "import/no-default-export": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.ts"
+        ]
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "lines-between-class-members": [
       "always",
+      "error",
       {
         "exceptAfterSingleLine": true
       }
     ],
+    "no-await-in-loop": "off",
+    "no-continue": "off",
+    "no-plusplus": "off",
     "no-restricted-syntax": "off"
   }
 }
