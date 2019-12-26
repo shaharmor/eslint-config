@@ -65,6 +65,14 @@
         ]
       }
     ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never"
+      }
+    ],
     "import/no-default-export": "error",
     "import/no-extraneous-dependencies": [
       "error",
