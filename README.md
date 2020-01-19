@@ -6,12 +6,12 @@ My opinionated eslint config
 
 1. Install eslint & relevant eslint plugins
 ```sh
-yarn add --dev eslint eslint-plugin-import eslint-plugin-prettier eslint-import-resolver-typescript @typescript-eslint/eslint-plugin prettier
+npm i --save-dev eslint eslint-plugin-import eslint-plugin-prettier eslint-plugin-vue eslint-import-resolver-typescript @typescript-eslint/eslint-plugin prettier
 ```
 
 2. Install this eslint config
 ```sh
-yarn add --dev @shaharmor/eslint-config
+npm i --save-dev @shaharmor/eslint-config
 ```
 
 ### Configuration

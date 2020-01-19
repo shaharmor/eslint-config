@@ -5,6 +5,7 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
+    "plugin:vue/recommended",
     "plugin:prettier/recommended",
     "prettier/@typescript-eslint"
   ],
@@ -12,6 +13,7 @@
   "plugins": [
     "@typescript-eslint",
     "import",
+    "vue",
     "prettier"
   ],
   "env": {
