@@ -2,13 +2,19 @@ module.exports = {
   extends: [
     'airbnb-base',
     'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
-    'plugin:prettier/recommended',
-    'prettier/@typescript-eslint'
+    'plugin:vue/recommended',
+    'prettier/@typescript-eslint',
+    'prettier/vue',
+    'plugin:prettier/recommended'
   ],
-  parser: '@typescript-eslint/parser',
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: '@typescript-eslint/parser'
+  },
   plugins: [
     '@typescript-eslint',
     'import',
@@ -23,8 +29,6 @@ module.exports = {
     }
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
@@ -72,7 +76,8 @@ module.exports = {
       'ignorePackages',
       {
         'js': 'never',
-        'ts': 'never'
+        'ts': 'never',
+        'vue': 'never'
       }
     ],
     'import/no-default-export': 'error',
@@ -93,7 +98,9 @@ module.exports = {
       }
     ],
     'no-await-in-loop': 'off',
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-continue': 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-plusplus': 'off',
     'no-restricted-syntax': 'off'
   }
