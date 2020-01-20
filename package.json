@@ -19,9 +19,9 @@
     "name": "Shahar Mor"
   },
   "files": [
-    ".eslintrc.json"
+    ".eslintrc.js"
   ],
-  "main": ".eslintrc.json",
+  "main": ".eslintrc.js",
   "dependencies": {
     "@typescript-eslint/parser": "2.16.0",
     "eslint-config-airbnb-base": "14.0.0",
