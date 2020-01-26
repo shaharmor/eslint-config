@@ -1,26 +1,30 @@
 module.exports = {
   extends: [
-    'airbnb-base',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
-    'plugin:vue/recommended',
-    'prettier/@typescript-eslint',
-    'prettier/vue',
-    'plugin:prettier/recommended'
+    'eslint:recommended', // baseline
+    'airbnb-base',  // eslint-config-airbnb-base
+    'plugin:@typescript-eslint/eslint-recommended', // @typescript-eslint/eslint-plugin
+    'plugin:@typescript-eslint/recommended', // @typescript-eslint/eslint-plugin
+    'plugin:@typescript-eslint/recommended-requiring-type-checking', // @typescript-eslint/eslint-plugin
+    'plugin:import/errors', // eslint-plugin-import
+    'plugin:import/warnings', // eslint-plugin-import
+    'plugin:import/typescript', // eslint-import-resolver-typescript
+    'plugin:vue/recommended', // eslint-plugin-vue
+    // 'prettier', // eslint-config-prettier (included in plugin:prettier/recommended)
+    'plugin:prettier/recommended', // eslint-plugin-prettier
+    'prettier/@typescript-eslint', // eslint-config-prettier
+    'prettier/vue' // eslint-config-prettier
   ],
-  parser: 'vue-eslint-parser',
+  parser: 'vue-eslint-parser', // eslint-plugin-vue
   parserOptions: {
-    parser: '@typescript-eslint/parser',
+    parser: '@typescript-eslint/parser', // @typescript-eslint/eslint-plugin
     project: 'tsconfig.json',
     extraFileExtensions: ['.vue']
   },
   plugins: [
     '@typescript-eslint',
     'import',
-    'prettier'
+    // 'prettier', // eslint-plugin-prettier (included in plugin:prettier/recommended)
+    // 'vue' // eslint-plugin-vue (included in plugin:vue/recommended)
   ],
   env: {
     es6: true
@@ -77,17 +81,19 @@ module.exports = {
       'error',
       'ignorePackages',
       {
-        'js': 'never',
-        'ts': 'never',
-        'vue': 'never'
+        js: 'never',
+        ts: 'never',
+        json: 'always',
+        vue: 'always'
       }
     ],
     'import/no-default-export': 'error',
     'import/no-extraneous-dependencies': [
       'error',
       {
-        'devDependencies': [
-          '**/*.test.ts'
+        devDependencies: [
+          '**/*.{test,spec}.ts',
+          '**/{tests,__tests__}/**/*.ts'
         ]
       }
     ],
@@ -96,7 +102,7 @@ module.exports = {
       'error',
       'always',
       {
-        'exceptAfterSingleLine': true
+        exceptAfterSingleLine: true
       }
     ],
     'no-await-in-loop': 'off',
@@ -105,5 +111,13 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-plusplus': 'off',
     'no-restricted-syntax': 'off'
-  }
+  },
+  overrides: [
+    {
+      files: ['*.vue'],
+      rules: {
+        'import/no-default-export': 'off',
+      }
+    }
+  ]
 };

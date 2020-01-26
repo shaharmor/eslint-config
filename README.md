@@ -6,7 +6,7 @@ My opinionated eslint config
 
 1. Install eslint & relevant eslint plugins
 ```sh
-npm i --save-dev eslint eslint-plugin-import eslint-plugin-prettier eslint-import-resolver-typescript @typescript-eslint/eslint-plugin prettier
+npm i --save-dev eslint eslint-plugin-import eslint-plugin-prettier eslint-import-resolver-typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser prettier
 ```
 
 2. Install this eslint config
