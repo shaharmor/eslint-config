@@ -77,6 +77,7 @@ module.exports = {
         ]
       }
     ],
+    '@typescript-eslint/no-unused-expressions': 'error',
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -112,7 +113,8 @@ module.exports = {
     'no-continue': 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-plusplus': 'off',
-    'no-restricted-syntax': 'off'
+    'no-restricted-syntax': 'off',
+    'no-unused-expressions': 'off'
   },
   overrides: [
     {
