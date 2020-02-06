@@ -1,6 +1,6 @@
 {
   "name": "@shaharmor/eslint-config",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "My opinionated eslint config",
   "keywords": [
     "eslint",
