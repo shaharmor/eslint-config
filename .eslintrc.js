@@ -94,7 +94,8 @@ module.exports = {
         devDependencies: [
           '**/*.{test,spec}.ts',
           '**/{tests,__tests__}/**/*.ts',
-          'webpack.config.ts'
+          'webpack.config.ts',
+          'jest.config.js'
         ]
       }
     ],
