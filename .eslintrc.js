@@ -93,7 +93,8 @@ module.exports = {
       {
         devDependencies: [
           '**/*.{test,spec}.ts',
-          '**/{tests,__tests__}/**/*.ts'
+          '**/{tests,__tests__}/**/*.ts',
+          'webpack.config.ts'
         ]
       }
     ],
