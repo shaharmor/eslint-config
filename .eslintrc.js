@@ -122,6 +122,14 @@ module.exports = {
       rules: {
         'import/no-default-export': 'off',
       }
+    },
+    {
+      files: [
+        '*.js'
+      ],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off'
+      }
     }
   ]
 };
