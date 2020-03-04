@@ -136,7 +136,8 @@ module.exports = {
         '*.test.ts'
       ],
       rules: {
-        '@typescript-eslint/unbound-method': 'off'
+        '@typescript-eslint/unbound-method': 'off',
+        'import/no-extraneous-dependencies': 'off'
       }
     }
   ]
