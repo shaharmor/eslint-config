@@ -128,6 +128,7 @@ module.exports = {
         '*.js'
       ],
       rules: {
+        '@typescript-eslint/explicit-member-accessibility': 'off',
         '@typescript-eslint/no-var-requires': 'off'
       }
     },
