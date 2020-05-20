@@ -5,10 +5,12 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended', // @typescript-eslint/eslint-plugin
     'plugin:@typescript-eslint/recommended', // @typescript-eslint/eslint-plugin
     'plugin:@typescript-eslint/recommended-requiring-type-checking', // @typescript-eslint/eslint-plugin
+    'plugin:node/recommended', // eslint-plugin-node
     'plugin:import/errors', // eslint-plugin-import
     'plugin:import/warnings', // eslint-plugin-import
     'plugin:import/typescript', // eslint-import-resolver-typescript
     'plugin:vue/recommended', // eslint-plugin-vue
+    'plugin:jest/recommended', // eslint-plugin-jest
     // 'prettier', // eslint-config-prettier (included in plugin:prettier/recommended)
     'plugin:prettier/recommended', // eslint-plugin-prettier
     'prettier/@typescript-eslint', // eslint-config-prettier
@@ -21,10 +23,12 @@ module.exports = {
     extraFileExtensions: ['.vue']
   },
   plugins: [
-    '@typescript-eslint',
-    'import',
+    // '@typescript-eslint', // @typescript-eslint/eslint-plugin (included in plugin:@typescript-eslint/recommended)
+    // 'import', // eslint-plugin-import (included in plugin:import/*)
     // 'prettier', // eslint-plugin-prettier (included in plugin:prettier/recommended)
-    // 'vue' // eslint-plugin-vue (included in plugin:vue/recommended)
+    // 'vue', // eslint-plugin-vue (included in plugin:vue/recommended)
+    // 'node', // eslint-plugin-node (included in plugin:node/recommended)
+    // 'jest // eslint-plugin-jest (included in plugin:jest/recommended)
   ],
   env: {
     es6: true
