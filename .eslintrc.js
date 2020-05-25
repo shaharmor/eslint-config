@@ -2,7 +2,6 @@ module.exports = {
   extends: [
     'eslint:recommended', // baseline
     'airbnb-base',  // eslint-config-airbnb-base
-    'plugin:@typescript-eslint/eslint-recommended', // @typescript-eslint/eslint-plugin
     'plugin:@typescript-eslint/recommended', // @typescript-eslint/eslint-plugin
     'plugin:@typescript-eslint/recommended-requiring-type-checking', // @typescript-eslint/eslint-plugin
     'plugin:import/errors', // eslint-plugin-import
