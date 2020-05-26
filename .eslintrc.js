@@ -123,7 +123,10 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-plusplus': 'off',
     'no-restricted-syntax': 'off',
-    'no-unused-expressions': 'off'
+    'no-unused-expressions': 'off',
+    'no-void': ['error', {
+      allowAsStatement: true
+    }]
   },
   overrides: [
     {
