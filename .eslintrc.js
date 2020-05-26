@@ -104,7 +104,8 @@ module.exports = {
           '**/*.{test,spec}.ts',
           '**/{tests,__tests__}/**/*.ts',
           'webpack.config.ts',
-          'jest.config.js'
+          'jest.config.js',
+          'tailwind.config.js'
         ]
       }
     ],
