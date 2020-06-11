@@ -86,6 +86,9 @@ module.exports = {
       }
     ],
     '@typescript-eslint/no-unused-expressions': 'error',
+    'vue/component-name-in-template-casing': ['error', 'PascalCase', {
+      'registeredComponentsOnly': false,
+    }],
     'import/extensions': [
       'error',
       'ignorePackages',
