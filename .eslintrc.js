@@ -139,6 +139,12 @@ module.exports = {
       }
     },
     {
+      files: ['webpack.config.ts'],
+      rules: {
+        'import/no-default-export': 'off',
+      }
+    },
+    {
       files: [
         '*.js'
       ],
