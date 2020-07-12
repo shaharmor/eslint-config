@@ -1,3 +1,5 @@
+const __PROD__ = process.env.NODE_ENV === 'production';
+
 module.exports = {
   extends: [
     'eslint:recommended', // baseline
@@ -121,9 +123,9 @@ module.exports = {
       }
     ],
     'no-await-in-loop': 'off',
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-console': __PROD__ ? 'error' : 'off',
     'no-continue': 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': __PROD__ ? 'error' : 'off',
     'no-plusplus': 'off',
     'no-restricted-syntax': 'off',
     'no-unused-expressions': 'off',
