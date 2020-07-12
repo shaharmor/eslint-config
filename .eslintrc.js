@@ -55,10 +55,6 @@ module.exports = {
         }
       }
     ],
-    '@typescript-eslint/indent': [
-      'error',
-      2
-    ],
     '@typescript-eslint/member-ordering': [
       'error',
       {
