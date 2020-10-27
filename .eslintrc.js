@@ -83,6 +83,7 @@ module.exports = {
         ]
       }
     ],
+    '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/no-unused-expressions': 'error',
     'vue/component-name-in-template-casing': ['error', 'PascalCase', {
       'registeredComponentsOnly': false,
@@ -125,6 +126,7 @@ module.exports = {
     'no-debugger': __PROD__ ? 'error' : 'off',
     'no-plusplus': 'off',
     'no-restricted-syntax': 'off',
+    'no-shadow': 'off', // replaced by @typescript-eslint/no-shadow
     'no-unused-expressions': 'off',
     'no-void': ['error', {
       allowAsStatement: true
