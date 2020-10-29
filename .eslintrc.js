@@ -140,7 +140,10 @@ module.exports = {
       }
     },
     {
-      files: ['webpack.config.ts'],
+      files: [
+        'webpack.config.ts',
+        'jest.config.ts'
+      ],
       rules: {
         'import/no-default-export': 'off',
       }
