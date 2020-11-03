@@ -23,7 +23,7 @@
   ],
   "main": ".eslintrc.js",
   "dependencies": {
-    "@typescript-eslint/parser": "4.6.0",
+    "@typescript-eslint/parser": "4.6.1",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-config-prettier": "6.15.0",
     "eslint-plugin-vue": "7.1.0",
