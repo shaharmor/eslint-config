@@ -34,7 +34,6 @@ module.exports = {
     'node_modules/',
     'dist/',
     '.eslintrc.js',
-    'jest.config.js'
   ],
   env: {
     es6: true
@@ -106,7 +105,6 @@ module.exports = {
           '**/*.{test,spec}.ts',
           '**/{tests,__tests__}/**/*.ts',
           'webpack.config.ts',
-          'jest.config.js',
           'jest.config.ts',
           'tailwind.config.js'
         ]
