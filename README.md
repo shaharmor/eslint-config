@@ -14,7 +14,7 @@ Configure eslint to use this eslint config:
 Add `.eslintrc.js` file to your project`s root folder with the contents of:
 
     ```js
-    require('@rushstack/eslint-config/patch/modern-module-resolution');
+    require('@rushstack/eslint-patch/modern-module-resolution');
 
     module.exports = {
         extends: [
