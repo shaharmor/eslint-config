@@ -1,5 +1,3 @@
-const __PROD__ = process.env.NODE_ENV === 'production';
-
 module.exports = {
   extends: [
     'eslint:recommended', // baseline
@@ -43,6 +41,7 @@ module.exports = {
       typescript: {}
     }
   },
+  reportUnusedDisableDirectives: true,
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-member-accessibility': [
@@ -84,9 +83,13 @@ module.exports = {
     ],
     '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/no-unused-expressions': 'error',
-    'vue/component-name-in-template-casing': ['error', 'PascalCase', {
-      'registeredComponentsOnly': false,
-    }],
+    'vue/component-name-in-template-casing': [
+      'error',
+      'PascalCase',
+      {
+        'registeredComponentsOnly': false,
+      }
+    ],
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -119,28 +122,30 @@ module.exports = {
       }
     ],
     'no-await-in-loop': 'off',
-    'no-console': __PROD__ ? 'error' : 'off',
+    'no-console': 'error',
     'no-continue': 'off',
-    'no-debugger': __PROD__ ? 'error' : 'off',
-    'no-plusplus': 'off',
+    'no-debugger': 'error',
+    'no-plusplus': [
+      'error', {
+        allowForLoopAfterthoughts: true
+      }
+    ],
     'no-restricted-syntax': 'off',
     'no-shadow': 'off', // replaced by @typescript-eslint/no-shadow
     'no-unused-expressions': 'off',
-    'no-void': ['error', {
-      allowAsStatement: true
-    }]
+    'no-void': [
+      'error',
+      {
+        allowAsStatement: true
+      }
+    ]
   },
   overrides: [
     {
-      files: ['*.vue'],
-      rules: {
-        'import/no-default-export': 'off',
-      }
-    },
-    {
       files: [
+        '*.vue',
         'webpack.config.ts',
-        'jest.config.ts'
+        'jest.config.ts',
       ],
       rules: {
         'import/no-default-export': 'off',
@@ -163,8 +168,7 @@ module.exports = {
         '*.test.ts'
       ],
       rules: {
-        '@typescript-eslint/unbound-method': 'off',
-        'import/no-extraneous-dependencies': 'off'
+        '@typescript-eslint/unbound-method': 'off'
       }
     }
   ]
