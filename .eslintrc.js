@@ -1,5 +1,3 @@
-const __PROD__ = process.env.NODE_ENV === 'production';
-
 module.exports = {
   extends: [
     'eslint:recommended', // baseline
@@ -104,8 +102,6 @@ module.exports = {
         devDependencies: [
           '**/*.{test,spec}.ts',
           '**/{tests,__tests__}/**/*.ts',
-          'webpack.config.ts',
-          'jest.config.ts',
           'tailwind.config.js'
         ]
       }
@@ -119,9 +115,9 @@ module.exports = {
       }
     ],
     'no-await-in-loop': 'off',
-    'no-console': __PROD__ ? 'error' : 'off',
+    'no-console': 'error',
     'no-continue': 'off',
-    'no-debugger': __PROD__ ? 'error' : 'off',
+    'no-debugger': 'error',
     'no-plusplus': 'off',
     'no-restricted-syntax': 'off',
     'no-shadow': 'off', // replaced by @typescript-eslint/no-shadow
@@ -132,15 +128,8 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.vue'],
-      rules: {
-        'import/no-default-export': 'off',
-      }
-    },
-    {
       files: [
-        'webpack.config.ts',
-        'jest.config.ts'
+        '*.vue'
       ],
       rules: {
         'import/no-default-export': 'off',
@@ -163,8 +152,7 @@ module.exports = {
         '*.test.ts'
       ],
       rules: {
-        '@typescript-eslint/unbound-method': 'off',
-        'import/no-extraneous-dependencies': 'off'
+        '@typescript-eslint/unbound-method': 'off'
       }
     }
   ]
