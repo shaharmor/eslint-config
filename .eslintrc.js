@@ -41,6 +41,7 @@ module.exports = {
       typescript: {}
     }
   },
+  reportUnusedDisableDirectives: true,
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-member-accessibility': [
@@ -102,6 +103,8 @@ module.exports = {
         devDependencies: [
           '**/*.{test,spec}.ts',
           '**/{tests,__tests__}/**/*.ts',
+          'webpack.config.ts',
+          'jest.config.ts',
           'tailwind.config.js'
         ]
       }
@@ -129,7 +132,9 @@ module.exports = {
   overrides: [
     {
       files: [
-        '*.vue'
+        '*.vue',
+        'webpack.config.ts',
+        'jest.config.ts',
       ],
       rules: {
         'import/no-default-export': 'off',
