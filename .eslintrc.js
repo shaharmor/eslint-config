@@ -31,7 +31,8 @@ module.exports = {
     '.idea/',
     'node_modules/',
     'dist/',
-    'coverage/'
+    'coverage/',
+    '.eslintrc.js'
   ],
   env: {
     es6: true
