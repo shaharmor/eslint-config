@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'eslint:recommended', // baseline
-    'airbnb-base',  // eslint-config-airbnb-base
+    'airbnb-typescript/base',  // eslint-config-airbnb-typescript
     'plugin:@typescript-eslint/recommended', // @typescript-eslint/eslint-plugin
     'plugin:@typescript-eslint/recommended-requiring-type-checking', // @typescript-eslint/eslint-plugin
     'plugin:import/errors', // eslint-plugin-import
@@ -31,7 +31,7 @@ module.exports = {
     '.idea/',
     'node_modules/',
     'dist/',
-    '.eslintrc.js',
+    'coverage/'
   ],
   env: {
     es6: true
@@ -81,8 +81,6 @@ module.exports = {
         ]
       }
     ],
-    '@typescript-eslint/no-shadow': 'error',
-    '@typescript-eslint/no-unused-expressions': 'error',
     'vue/component-name-in-template-casing': [
       'error',
       'PascalCase',
@@ -131,8 +129,6 @@ module.exports = {
       }
     ],
     'no-restricted-syntax': 'off',
-    'no-shadow': 'off', // replaced by @typescript-eslint/no-shadow
-    'no-unused-expressions': 'off',
     'no-void': [
       'error',
       {

@@ -5,7 +5,7 @@ My opinionated eslint config
 ### Installation
 
 ```sh
-npm i --save-dev eslint @shaharmor/eslint-config
+npm i --save-dev eslint prettier typescript @shaharmor/eslint-config
 ```
 
 ### Configuration
