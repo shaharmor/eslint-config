@@ -41,11 +41,13 @@ module.exports = {
   },
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx']
+      //  '@typescript-eslint/parser': ['.ts', '.tsx'] // already configured in parserOptions.parser
     },
-    'typescript': {
-      'alwaysTryTypes': true
-    },
+    'import/resolver': {
+      'typescript': {
+        'alwaysTryTypes': true
+      },
+    }
   },
   reportUnusedDisableDirectives: true,
   rules: {
