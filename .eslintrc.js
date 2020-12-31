@@ -1,7 +1,9 @@
+
+
 module.exports = {
   extends: [
     'eslint:recommended', // baseline
-    'airbnb-typescript/base',  // eslint-config-airbnb-typescript
+    'airbnb-base',  // eslint-config-airbnb-base
     'plugin:@typescript-eslint/recommended', // @typescript-eslint/eslint-plugin
     'plugin:@typescript-eslint/recommended-requiring-type-checking', // @typescript-eslint/eslint-plugin
     'plugin:import/errors', // eslint-plugin-import
@@ -38,13 +40,18 @@ module.exports = {
     es6: true
   },
   settings: {
-    'import/resolver': {
-      typescript: {}
-    }
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx']
+    },
+    'typescript': {
+      'alwaysTryTypes': true
+    },
   },
   reportUnusedDisableDirectives: true,
   rules: {
-    '@typescript-eslint/explicit-function-return-type': 'off',
+    ...require('./airbnb-compatibility'),
+
+    // require accessibility definition on all class members except the constructor
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
       {
@@ -54,6 +61,7 @@ module.exports = {
         }
       }
     ],
+
     '@typescript-eslint/member-ordering': [
       'error',
       {
@@ -113,13 +121,6 @@ module.exports = {
       }
     ],
     'import/prefer-default-export': 'off',
-    'lines-between-class-members': [
-      'error',
-      'always',
-      {
-        exceptAfterSingleLine: true
-      }
-    ],
     'no-await-in-loop': 'off',
     'no-console': 'error',
     'no-continue': 'off',
