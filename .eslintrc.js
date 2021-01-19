@@ -118,6 +118,7 @@ module.exports = {
           '**/{tests,__tests__}/**/*.ts',
           'webpack.config.ts',
           'jest.config.ts',
+          'nuxt.config.ts',
           'tailwind.config.js'
         ]
       }
@@ -146,6 +147,7 @@ module.exports = {
         '*.vue',
         'webpack.config.ts',
         'jest.config.ts',
+        'nuxt.config.ts'
       ],
       rules: {
         'import/no-default-export': 'off',
