@@ -35,7 +35,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-prettier": "3.3.1",
     "eslint-plugin-vue": "7.5.0",
-    "vue-eslint-parser": "7.3.0"
+    "vue-eslint-parser": "7.4.1"
   },
   "peerDependencies": {
     "eslint": "^7.18.0",
