@@ -1,5 +1,3 @@
-
-
 module.exports = {
   extends: [
     'eslint:recommended', // baseline
