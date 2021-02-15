@@ -121,6 +121,16 @@ module.exports = {
         ]
       }
     ],
+    'import/order': [
+      'error',
+      {
+        'newlines-between': 'never',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: false
+        }
+      }
+    ],
     'import/prefer-default-export': 'off',
     'no-await-in-loop': 'off',
     'no-console': 'error',
