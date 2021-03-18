@@ -60,6 +60,15 @@ module.exports = {
       }
     ],
 
+    // don't add newline between single line class members
+    '@typescript-eslint/lines-between-class-members': [
+      'error',
+      'always',
+      {
+        exceptAfterSingleLine: true
+      }
+    ],
+
     '@typescript-eslint/member-ordering': [
       'error',
       {
