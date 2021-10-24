@@ -1,4 +1,5 @@
 module.exports = {
+  root: true, // this config should be the only eslint config loaded to make things easier to follow
   extends: [
     'eslint:recommended', // baseline
     'airbnb-base',  // eslint-config-airbnb-base
@@ -16,7 +17,9 @@ module.exports = {
   parserOptions: {
     parser: '@typescript-eslint/parser', // @typescript-eslint/eslint-plugin
     project: 'tsconfig.json',
-    extraFileExtensions: ['.vue']
+    extraFileExtensions: ['.vue'],
+    ecmaVersion: 2018,
+    sourceType: 'module',
   },
   plugins: [
     // '@typescript-eslint', // @typescript-eslint/eslint-plugin (included in plugin:@typescript-eslint/recommended)
@@ -69,6 +72,7 @@ module.exports = {
       }
     ],
 
+    // order class members in public-protected-private order
     '@typescript-eslint/member-ordering': [
       'error',
       {
@@ -114,7 +118,11 @@ module.exports = {
         vue: 'always'
       }
     ],
+
+    // should prefer named exports unless absolutely required
     'import/no-default-export': 'error',
+
+    // tests/tools might require dev dependencies
     'import/no-extraneous-dependencies': [
       'error',
       {
@@ -128,6 +136,8 @@ module.exports = {
         ]
       }
     ],
+
+    // order imports alphabetically for easier reading
     'import/order': [
       'error',
       {
@@ -138,6 +148,8 @@ module.exports = {
         }
       }
     ],
+
+    // should prefer named exports unless absolutely required
     'import/prefer-default-export': 'off',
     'no-await-in-loop': 'off',
     'no-console': 'error',
