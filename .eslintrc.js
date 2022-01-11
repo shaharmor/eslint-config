@@ -52,6 +52,9 @@ module.exports = {
   rules: {
     ...require('./airbnb-compatibility'),
 
+    // require types always
+    '@typescript-eslint/explicit-function-return-type': 'error',
+
     // require accessibility definition on all class members except the constructor
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
@@ -62,6 +65,9 @@ module.exports = {
         }
       }
     ],
+
+    // require types always
+    '@typescript-eslint/explicit-module-boundary-types': 'error',
 
     // don't add newline between single line class members
     '@typescript-eslint/lines-between-class-members': [
